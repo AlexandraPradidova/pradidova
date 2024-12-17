@@ -230,11 +230,13 @@ nav ul li a:hover {
 
     .bio-section {
         flex-direction: column;
+        padding-left: 20px;
     }
 
     .bio-section .statement,
     .bio-section .photo {
         flex: 1 1 100%;
+        padding: 20px;
     }
 }
 
