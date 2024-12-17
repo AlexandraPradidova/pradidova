@@ -1,16 +1,16 @@
 // Všetky obrázky v galérii
 const galleryItems = document.querySelectorAll('.gallery-item img');
-let currentIndex = 0; // Sledovanie aktuálneho obrázku
+let currentIndex = 0; 
 
 galleryItems.forEach((image, index) => {
     // Pri kliknutí na obrázok
     image.addEventListener('click', () => {
-        currentIndex = index; // Nastavenie aktuálneho indexu
+        currentIndex = index; 
         openPopup(image.src, image.alt);
     });
 });
 
-// Funkcia na otvorenie pop-up okna
+
 function openPopup(src, alt) {
     // Odstráni existujúce pop-up, ak už je otvorený
     const existingPopup = document.querySelector('.popup');
@@ -48,13 +48,13 @@ function openPopup(src, alt) {
     popUp.appendChild(rightArrow);
     document.body.appendChild(popUp);
 
-    // Zatvorenie pop-up kliknutím na pozadie
+    // Zatvorenie pop-up 
     popUp.addEventListener('click', (e) => {
         if (e.target === popUp) popUp.remove();
     });
 }
 
-// Funkcia na navigáciu galérie (šípky)
+
 function navigateGallery(direction) {
     currentIndex = (currentIndex + direction + galleryItems.length) % galleryItems.length;
     const newImage = galleryItems[currentIndex];
@@ -66,7 +66,7 @@ function navigateGallery(direction) {
     details.innerText = newImage.alt || '';
 }
 
-// Efekt pri prechode kurzora na obrázky
+
 galleryItems.forEach((image) => {
     image.addEventListener('mouseover', () => {
         image.style.filter = 'brightness(70%)';
