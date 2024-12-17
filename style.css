@@ -1,4 +1,4 @@
-/* Globálny štýl */
+
 body {
     font-family: 'Times New Roman', serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Hlavička */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* Galéria */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -87,12 +87,12 @@ nav ul li a:hover {
     filter: brightness(70%);
 }
 
-/* Upravené nastavenie galérie */
+
 .gallery-item .details {
-    display: none; /* Skrytie popisov na hlavnej stránke */
+    display: none; 
 }
 
-/* Pop-up */
+
 .popup {
     position: fixed;
     top: 0;
@@ -117,13 +117,13 @@ nav ul li a:hover {
 }
 
 .popup .details {
-    display: block; /* Zobrazenie popisov v pop-up okne */
+    display: block; 
     font-size: 1rem;
     color: #fff;
     text-align: center;
     margin-top: 10px;
 }
-/* Šípky */
+
 .arrow {
     position: absolute;
     top: 50%;
@@ -148,19 +148,19 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-/* Sekcia bio */
+
 .bio-content {
-    display: flex; /* Flexbox na delenie obsahu */
+    display: flex; 
     justify-content: space-between;
-    align-items: flex-start; /* Zarovná obsah na vrch */
-    gap: 20px; /* Medzera medzi sekciami */
+    align-items: flex-start; 
+    gap: 20px; 
     margin: 40px auto;
     max-width: 1200px;
 }
 
 .left-section {
-    flex: 1; /* Ľavá sekcia zaberá viac miesta */
-    text-align: left; /* Zarovnanie textu doľava */
+    flex: 1; 
+    text-align: left; 
 }
 
 .left-section h2 {
@@ -170,36 +170,36 @@ nav ul li a:hover {
 }
 
 .exhibitions {
-    list-style: none; /* Odstrániť bodky zo zoznamu */
+    list-style: none; 
     padding: 0;
 }
 
 .exhibitions li {
-    margin-bottom: 10px; /* Medzera medzi jednotlivými výstavami */
+    margin-bottom: 10px; 
     line-height: 1.6;
 }
 
 .exhibitions strong {
-    color: #000; /* Zvýraznenie názvu výstavy */
+    color: #000; 
 }
 
 .right-section {
-    flex: 0.8; /* Pravá sekcia (obrázok) zaberá menej miesta */
+    flex: 0.8; 
 }
 
 .bio-image {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Zaoblené rohy obrázka */
+    border-radius: 8px; 
 }
 
-/* Sekcia Kontakt - Zarovnanie do stredu */
+
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh; /* Výška na stred */
+    height: 60vh;
     text-align: center;
 }
 
